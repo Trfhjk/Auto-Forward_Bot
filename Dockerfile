@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/
 
 # Specify the command to run your bot.py script
-CMD ["python", "bot.py"]
+CMD flask run -h 0.0.0.0 -p 8000 & python3 bot.py
